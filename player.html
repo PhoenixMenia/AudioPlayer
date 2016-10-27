@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音频播放器</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="jquery-1.12.4.js"></script>
+		<script src="audio.js"></script>
+	</head>
+	<body>
+		<header>
+			<div>&#xe6e4;</div>
+			<div id="song_name">若生命等候</div>
+			<div>&#xe648;</div>
+		</header>
+		
+		<section>
+			<dic class="volumeRange">
+				<img id="volume" src="img/vol.png" />
+				<input id="volumeRange" type="range" min="0" max="1" step="0.1"/>
+			</div>
+			<img class="rotateImg" src="img/center.gif"/>
+		</section>
+		
+		<footer>
+			<div class="playRange">
+				<audio id="music" src="music/G.E.M. 邓紫棋 - 喜欢你.mp3" height="0"></audio>
+				<div class="rangeWrap">
+					<span id="currTime"></span>
+					<input id="playRange" type="range" min="0" max="" step="1" value="0"/>
+					<span id="allTime"></span>
+				</div>
+			</div>
+			<div class="controls">
+				<div id="loopPattern">&#xe63b;</div>
+				<div id="prev">&#xe6c9;</div>
+				<div id="playOrPause">&#xe602;</div>
+				<div id="next">&#xe6c8;</div>
+				<div>&#xe67d;</div>
+			</div>
+		</footer>
+	</body>
+</html>
